@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Adeboye Daniel Oluwaseun | Customer Service & Social Media Management</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;600;700&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f5f2;--card:#fff;--ink:#1c1e21;--mute:#62666d;--line:#e3e1db;--soft:#ecebe6;--acc:#1f6f66;--acc-ink:#fff;--r:20px;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141516;--card:#1d1f21;--ink:#f1f0ec;--mute:#a0a4aa;--line:#2e3134;--soft:#25282b;--acc:#5fc2b5;--acc-ink:#0f1a18}}
+:root[data-theme="dark"]{--bg:#141516;--card:#1d1f21;--ink:#f1f0ec;--mute:#a0a4aa;--line:#2e3134;--soft:#25282b;--acc:#5fc2b5;--acc-ink:#0f1a18}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 80px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 Figtree,system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:"Bricolage Grotesque",Figtree,system-ui,sans-serif;line-height:1.08;margin:0;letter-spacing:-.02em}
+h1{font-size:clamp(2.5rem,6.2vw,4.9rem);font-weight:700}
+h2{font-size:clamp(1.9rem,3.8vw,3rem);font-weight:600}
+h3{font-size:1.2rem;font-weight:600;letter-spacing:-.01em}
+p{margin:0}a{color:inherit}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+section{padding:clamp(64px,9vw,120px) 0}
+.lead{color:var(--mute);max-width:56ch;margin-top:16px}
+.head{margin-bottom:44px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border-radius:999px;font-weight:600;text-decoration:none;border:1px solid var(--ink);transition:transform .2s,background .2s,color .2s;cursor:pointer;font-size:1rem;font-family:inherit}
+.btn:hover{transform:translateY(-2px)}.btn:active{transform:translateY(0)}
+.btn.p{background:var(--ink);color:var(--bg)}.btn.p:hover{background:var(--acc);border-color:var(--acc);color:var(--acc-ink)}
+.btn.s{background:transparent;color:var(--ink)}.btn.s:hover{background:var(--soft)}
+:focus-visible{outline:3px solid var(--acc);outline-offset:3px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:28px}
+.grid{display:grid;gap:18px}
+/* nav */
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;height:64px}
+.logo{font-family:"Bricolage Grotesque",sans-serif;font-weight:700;text-decoration:none;font-size:1.1rem}
+nav ul{display:flex;gap:26px;list-style:none;margin:0;padding:0}
+nav ul a{text-decoration:none;color:var(--mute);font-size:.95rem;font-weight:500}nav ul a:hover{color:var(--ink)}
+.nav-cta{padding:9px 18px;font-size:.92rem}
+/* hero */
+.hero{padding:clamp(48px,7vw,96px) 0 clamp(56px,8vw,110px);position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:64px 64px;opacity:.45;-webkit-mask-image:radial-gradient(ellipse 70% 70% at 70% 40%,#000,transparent);mask-image:radial-gradient(ellipse 70% 70% at 70% 40%,#000,transparent)}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}
+.role{display:inline-flex;align-items:center;gap:10px;font-weight:600;color:var(--acc);margin-bottom:22px}
+.role i{width:28px;height:2px;background:var(--acc)}
+.hero p.lead{font-size:1.2rem;margin:26px 0 34px;max-width:50ch;color:var(--mute)}
+.ctas{display:flex;gap:12px;flex-wrap:wrap}
+.why{margin-top:38px;display:flex;gap:28px;flex-wrap:wrap;color:var(--mute);font-size:.95rem}
+.why b{color:var(--ink);font-weight:600}
+.portrait{position:relative}
+.ph{aspect-ratio:4/5;border-radius:28px;border:1.5px dashed var(--mute);background:var(--soft);display:grid;place-items:center;text-align:center;color:var(--mute);padding:24px;overflow:hidden;position:relative}
+.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ph svg{width:84px;height:84px;opacity:.5;margin:0 auto 12px;display:block}
+.chip{position:absolute;left:-22px;bottom:34px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:12px 16px;display:flex;gap:12px;align-items:center;box-shadow:0 12px 30px -16px rgba(0,0,0,.35);font-size:.9rem;line-height:1.3}
+.chip .dot{width:34px;height:34px;border-radius:50%;background:var(--acc);color:var(--acc-ink);display:grid;place-items:center;font-weight:700}
+.chip small{display:block;color:var(--mute)}
+.load{animation:rise .9s cubic-bezier(.2,.7,.2,1) both}
+.load.d1{animation-delay:.12s}.load.d2{animation-delay:.24s}.load.d3{animation-delay:.38s}
+@keyframes rise{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+/* about */
+.about{display:grid;grid-template-columns:1.3fr 1fr;gap:56px;align-items:start}
+.about p+p{margin-top:16px}
+.stats{display:grid;gap:14px}
+.stat{display:flex;align-items:baseline;gap:16px;border-bottom:1px solid var(--line);padding-bottom:14px}
+.stat b{font-family:"Bricolage Grotesque",sans-serif;font-size:2.3rem;line-height:1;min-width:150px;letter-spacing:-.02em}
+.stat span{color:var(--mute)}
+/* skills */
+.skills{grid-template-columns:repeat(4,1fr)}
+.skill{padding:22px;display:flex;flex-direction:column;gap:14px;transition:border-color .25s,transform .25s}
+.skill:hover{border-color:var(--acc);transform:translateY(-3px)}
+.ico{width:42px;height:42px;border-radius:12px;background:var(--soft);display:grid;place-items:center;color:var(--acc)}
+.ico svg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.skill h3{font-size:1.02rem}
+/* experience */
+.tl{border-left:2px solid var(--line);margin-left:8px;display:grid;gap:22px}
+.job{position:relative;margin-left:30px;display:grid;grid-template-columns:150px 1fr;gap:28px}
+.job::before{content:"";position:absolute;left:-39px;top:36px;width:14px;height:14px;border-radius:50%;background:var(--bg);border:3px solid var(--acc)}
+.slot{aspect-ratio:3/2;border:1.5px dashed var(--mute);border-radius:14px;display:grid;place-items:center;color:var(--mute);font-size:.8rem;text-align:center;padding:8px;background:var(--soft);overflow:hidden}
+.slot img{max-width:80%;max-height:80%;object-fit:contain}
+.job h3{font-size:1.45rem}.job .r{color:var(--acc);font-weight:600;margin:4px 0 14px}
+.job ul{margin:0;padding-left:18px;color:var(--mute);columns:2;column-gap:32px}
+.job li{margin-bottom:6px;break-inside:avoid}
+/* brands */
+.brands{grid-template-columns:repeat(3,1fr)}
+.brand{position:relative;min-height:230px;display:grid;place-items:center;overflow:hidden;padding:24px;transition:border-color .3s}
+.brand .slot{width:70%;transition:transform .4s,opacity .3s}
+.brand .over{position:absolute;inset:0;background:var(--ink);color:var(--bg);display:flex;flex-direction:column;justify-content:center;padding:26px;transform:translateY(101%);transition:transform .4s cubic-bezier(.2,.7,.2,1)}
+.brand:hover .over,.brand:focus-within .over,.brand:focus .over{transform:none}
+.brand .over b{font-family:"Bricolage Grotesque",sans-serif;font-size:1.3rem}.brand .over span{opacity:.75;margin-top:4px}
+/* approach */
+.steps{grid-template-columns:repeat(4,1fr);counter-reset:s}
+.step{position:relative}
+.step::before{counter-increment:s;content:counter(s);width:36px;height:36px;border-radius:50%;background:var(--acc);color:var(--acc-ink);display:grid;place-items:center;font-weight:700;margin-bottom:20px}
+.step h3{font-size:1.5rem;margin-bottom:8px}.step p{color:var(--mute)}
+/* social */
+.soc{grid-template-columns:repeat(3,1fr)}
+.soc .card{transition:transform .3s,border-color .3s}.soc .card:hover{transform:translateY(-3px);border-color:var(--acc)}
+.soc .ico{margin-bottom:18px}.soc p{color:var(--mute);margin-top:8px;font-size:.96rem}
+/* reporting */
+.rep{display:grid;grid-template-columns:.9fr 1.1fr;gap:48px;align-items:center}
+.rep ul{list-style:none;padding:0;margin:28px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:12px 24px}
+.rep li{padding-left:26px;position:relative;font-size:.97rem}
+.rep li::before{content:"";position:absolute;left:0;top:.5em;width:12px;height:7px;border-left:2px solid var(--acc);border-bottom:2px solid var(--acc);transform:rotate(-45deg)}
+.dash{padding:22px}
+.dash-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px;gap:10px;flex-wrap:wrap}
+.tag{font-size:.78rem;border:1px solid var(--line);border-radius:999px;padding:4px 12px;color:var(--mute)}
+.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:18px}
+.kpi{background:var(--soft);border-radius:14px;padding:14px}
+.kpi small{color:var(--mute);display:block;font-size:.78rem}.kpi b{font-family:"Bricolage Grotesque",sans-serif;font-size:1.5rem}
+.dash svg{width:100%;height:auto;display:block}
+.bars rect{fill:var(--soft)}.bars rect.hi{fill:var(--acc)}
+.line{fill:none;stroke:var(--ink);stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:900;stroke-dashoffset:900;transition:stroke-dashoffset 1.8s ease}
+.in .line{stroke-dashoffset:0}
+.dash .note{margin-top:12px;font-size:.8rem;color:var(--mute)}
+/* work */
+.work{grid-template-columns:repeat(3,1fr)}
+.proj{display:flex;flex-direction:column;gap:16px;padding:22px}
+.shot{aspect-ratio:16/10;border:1.5px dashed var(--mute);border-radius:14px;background:var(--soft);display:grid;place-items:center;color:var(--mute);font-size:.82rem;text-align:center;padding:10px;overflow:hidden}
+.shot img{width:100%;height:100%;object-fit:cover}
+.proj .meta{display:flex;align-items:center;gap:12px}
+.proj .slot{width:72px;aspect-ratio:3/2;flex:none;font-size:.7rem}
+.proj .rl{color:var(--acc);font-weight:600;font-size:.92rem}
+.proj p{color:var(--mute);font-size:.96rem}
+.proj ul{margin:0;padding-left:18px;font-size:.93rem;color:var(--mute)}
+.res{border-left:3px solid var(--acc);padding:6px 0 6px 14px;font-size:.92rem}
+.res b{display:block}.res span{color:var(--mute)}
+.proj .btn{margin-top:auto;justify-content:center;padding:12px 20px}
+/* tools */
+.tools{grid-template-columns:repeat(7,1fr);gap:14px}
+.tool{text-align:center;padding:22px 10px;font-size:.88rem;font-weight:500;transition:transform .25s}
+.tool:hover{transform:translateY(-3px)}
+.tool i{display:grid;place-items:center;width:46px;height:46px;border-radius:12px;margin:0 auto 12px;color:#fff;font-style:normal;font-weight:700;font-family:"Bricolage Grotesque",sans-serif}
+/* testimonials */
+.tes{grid-template-columns:repeat(3,1fr)}
+.tes blockquote{margin:0;font-size:1.05rem;line-height:1.55}
+.tes .who{display:flex;gap:12px;align-items:center;margin-top:22px;font-size:.9rem}
+.av{width:42px;height:42px;border-radius:50%;background:var(--soft);border:1.5px dashed var(--mute);flex:none}
+.who small{display:block;color:var(--mute)}
+/* contact */
+.contact{background:var(--ink);color:var(--bg);border-radius:32px;padding:clamp(36px,6vw,80px);display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.contact h2{font-size:clamp(2.4rem,5.5vw,4.4rem)}
+.contact .lead{color:inherit;opacity:.72}
+.cl{display:grid;gap:18px}
+.cl div{border-bottom:1px solid color-mix(in srgb,var(--bg) 22%,transparent);padding-bottom:14px}
+.cl small{display:block;opacity:.6;font-size:.85rem}.cl a{text-decoration:none;font-weight:500;font-size:1.1rem;word-break:break-word}
+.contact .btn{background:var(--bg);color:var(--ink);border-color:var(--bg);margin-top:28px}
+.contact .btn:hover{background:var(--acc);border-color:var(--acc);color:var(--acc-ink)}
+footer{padding:36px 0 48px;color:var(--mute);font-size:.92rem}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+footer b{color:var(--ink);font-family:"Bricolage Grotesque",sans-serif;font-size:1.05rem;display:block}
+.rv{opacity:0;transform:translateY(16px);transition:opacity .7s,transform .7s}
+.rv.in{opacity:1;transform:none}
+
+h1{font-size:clamp(2.7rem,6.6vw,5.4rem);letter-spacing:-.035em}
+.card{border-radius:24px;box-shadow:0 24px 44px -36px rgba(0,0,0,.35)}
+.hero::after{content:"";position:absolute;right:-8%;top:-25%;width:640px;height:640px;background:radial-gradient(circle,color-mix(in srgb,var(--acc) 20%,transparent),transparent 66%);pointer-events:none}
+.slot{border:0;background:transparent;aspect-ratio:auto;min-height:56px;color:var(--ink);padding:0}
+.job .slot{background:var(--soft);border-radius:16px;display:grid;place-items:center;min-height:84px;padding:10px}
+.job{grid-template-columns:180px 1fr}.job .lg{font-size:1rem}
+.lg{display:inline-flex;align-items:center;gap:8px;font-family:"Bricolage Grotesque",sans-serif;font-weight:700;letter-spacing:-.02em;white-space:nowrap;font-size:1.25rem;color:var(--ink);line-height:1}
+.lg svg{width:1.3em;height:1.3em;stroke:var(--acc);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.lg-oraimo{font-size:1.5em;letter-spacing:-.04em}.lg-oraimo b{color:var(--acc)}.job .lg-oraimo{font-size:1.4rem}
+.brand .lg{font-size:clamp(1.4rem,2.6vw,2rem)}.brand .lg-oraimo{font-size:clamp(1.9rem,3.4vw,2.6rem)}
+.hv{display:grid;gap:14px;position:relative}
+.hv .msg{max-width:90%;padding:16px 20px;border-radius:22px;border:1px solid var(--line);background:var(--card);font-size:.98rem;box-shadow:0 22px 44px -28px rgba(0,0,0,.45)}
+.hv .msg small{display:block;color:var(--mute);font-size:.78rem;margin-bottom:4px}
+.hv .cu{border-bottom-left-radius:6px}
+.hv .me{margin-left:auto;background:var(--ink);color:var(--bg);border-color:var(--ink);border-bottom-right-radius:6px}
+.hv .me small{color:inherit;opacity:.65}
+.hv .ok{display:flex;gap:12px;align-items:center;background:var(--acc);color:var(--acc-ink);border-color:var(--acc);font-weight:600;max-width:none}
+.hv-b{display:flex;gap:16px 22px;flex-wrap:wrap;justify-content:space-between;align-items:center;padding:20px 22px;border:1px solid var(--line);border-radius:22px;background:var(--card)}
+.hv-b .lg{font-size:.95rem}.hv-b .lg-oraimo{font-size:1.25rem}
+.hv .cap{color:var(--mute);font-size:.8rem;text-align:center}
+.skill{border-radius:22px}.skill:hover{background:var(--ink);color:var(--bg)}.skill:hover .ico{background:var(--acc);color:var(--acc-ink)}
+#approach{background:var(--ink);color:var(--bg)}
+#approach .lead,#approach .step p{color:color-mix(in srgb,var(--bg) 68%,transparent)}
+#approach .card{background:color-mix(in srgb,var(--bg) 7%,transparent);border-color:color-mix(in srgb,var(--bg) 16%,transparent);box-shadow:none}
+#approach .step::before{background:var(--acc)}
+.shot.art{border:0;background:linear-gradient(135deg,var(--soft),color-mix(in srgb,var(--acc) 18%,var(--soft)));display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:1fr auto;gap:10px;padding:16px}
+.shot.art .lg{grid-column:1/-1;align-self:center;justify-self:center;font-size:1.5rem}
+.shot.art i{height:34px;border-radius:10px;background:var(--card);border:1px solid var(--line)}
+.proj .meta{gap:0}
+@media (max-width:1024px){.skills{grid-template-columns:repeat(3,1fr)}.tools{grid-template-columns:repeat(4,1fr)}.work,.tes{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}}
+@media (max-width:860px){nav ul{display:none}.hero .wrap,.about,.rep,.contact{grid-template-columns:1fr}.hero .wrap{gap:40px}.portrait{max-width:380px}.chip{left:12px}.brands,.soc{grid-template-columns:1fr 1fr}.job{grid-template-columns:1fr;gap:16px}.job .slot{width:130px}.job ul{columns:1}}
+@media (max-width:600px){body{font-size:16px}.wrap{padding:0 20px}.skills,.work,.tes,.brands,.soc,.steps{grid-template-columns:1fr}.skills{grid-template-columns:1fr 1fr}.tools{grid-template-columns:repeat(2,1fr)}.rep ul{grid-template-columns:1fr}.kpis{grid-template-columns:1fr 1fr 1fr}.stat b{min-width:120px;font-size:1.9rem}.btn{width:100%;justify-content:center}.nav-cta{width:auto}.brand{min-height:190px}.brand .over{transform:none;position:static;background:none;color:var(--ink);padding:14px 0 0;grid-row:2}.brand{display:flex;flex-direction:column;align-items:center;text-align:center}.tl{margin-left:4px}.job{margin-left:22px}.job::before{left:-31px}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}.line{stroke-dashoffset:0}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><a class="logo" href="#top">Daniel Adeboye</a>
+<ul><li><a href="#about">About</a></li><li><a href="#experience">Experience</a></li><li><a href="#approach">Approach</a></li><li><a href="#work">Work</a></li><li><a href="#contact">Contact</a></li></ul>
+<a class="btn p nav-cta" href="#contact">Get In Touch</a></div></nav>
+
+<header class="hero" id="top"><div class="wrap">
+<div>
+<div class="role load"><i></i>Customer Service &amp; Social Media Management</div>
+<h1 class="load d1">Customers stay when they feel heard.</h1>
+<p class="lead load d2">I help brands build better customer relationships, manage online communities, and communicate with their audiences with clarity and consistency.</p>
+<div class="ctas load d3"><a class="btn p" href="#work">View My Work</a><a class="btn s" href="#contact">Get In Touch</a></div>
+<div class="why load d3"><span><b>Adeboye Daniel Oluwaseun</b><br>Lagos, Nigeria</span><span><b>Open to roles in</b><br>Customer Support, Community &amp; Social Media</span></div>
+</div>
+<div class="hv load d2" aria-label="Illustration of a customer conversation">
+<div class="msg cu"><small>Customer</small>Hi, my order still hasn't arrived and I haven't heard from anyone.</div>
+<div class="msg me"><small>Daniel</small>I'm sorry about the wait. I've checked it for you, here's the update, and I'll message you tomorrow to confirm it arrived.</div>
+<div class="msg ok"><span>✓</span>Resolved, then followed up</div>
+<div class="hv-b"><span data-logo="echo"></span><span data-logo="oraimo"></span><span data-logo="cm"></span></div>
+<p class="cap">Illustrative conversation</p>
+</div></div>
+</div></header>
+
+<section id="about"><div class="wrap about rv">
+<div><h2>A customer-first professional who communicates clearly.</h2>
+<div class="lead" style="max-width:60ch">
+<p>I work at the point where a brand meets its audience. That means answering enquiries, handling complaints, joining online conversations, and creating the content that keeps a community engaged.</p>
+<p>I have supported brands across social platforms, kept communication consistent with each brand's tone, and tracked what is working so teams can make better decisions. I like problems that need patience, clear writing, and follow-through.</p></div></div>
+<div class="stats">
+<div class="stat"><b>3+ Years</b><span>Experience</span></div>
+<div class="stat"><b>50+</b><span>Projects &amp; Content Deliverables</span></div>
+<div class="stat"><b>Multiple Brands</b><span>Customer &amp; Community Support</span></div>
+</div></div></section>
+
+<section id="skills" style="padding-top:0"><div class="wrap">
+<div class="head rv"><h2>Core skills</h2><p class="lead">What I bring to a customer support, community, or social media team.</p></div>
+<div class="grid skills rv" id="skillgrid"></div></div></section>
+
+<section id="experience" style="background:var(--soft)"><div class="wrap">
+<div class="head rv"><h2>Experience</h2></div>
+<div class="tl rv">
+<article class="job card"><div class="slot" data-logo="echo"></div><div><h3>Echo Africa</h3><div class="r">Social Media / Content Creator</div><ul><li>Managing brand social media presence</li><li>Creating social media content</li><li>Community engagement</li><li>Supporting online conversations</li><li>Working with internal teams</li><li>Monitoring audience reactions</li><li>Creating content around campaigns and brand activities</li></ul></div></article>
+<article class="job card"><div class="slot" data-logo="oraimo"></div><div><h3>oraimo</h3><div class="r">Social Media / Community Support</div><ul><li>Community engagement</li><li>Responding to audience conversations</li><li>Supporting social media communication</li><li>Understanding Gen Z audiences</li><li>Maintaining brand tone and voice</li><li>Supporting campaign conversations</li><li>Keeping communication natural and engaging with the team</li></ul></div></article>
+<article class="job card"><div class="slot" data-logo="cm"></div><div><h3>Celebrate Men</h3><div class="r">Content &amp; Social Media</div><ul><li>Social media content development</li><li>Audience-focused communication</li><li>Educational and relatable content</li><li>Community engagement</li><li>Content planning</li><li>Monitoring content performance</li><li>Supporting the brand's online presence</li></ul></div></article>
+</div></div></section>
+
+<section id="brands"><div class="wrap">
+<div class="head rv"><h2>Brands I've Worked With</h2></div>
+<div class="grid brands rv">
+<div class="card brand" tabindex="0"><div class="slot" data-logo="echo"></div><div class="over"><b>Echo Africa</b><span>Social Media / Content Creator</span></div></div>
+<div class="card brand" tabindex="0"><div class="slot" data-logo="oraimo"></div><div class="over"><b>oraimo</b><span>Social Media / Community Support</span></div></div>
+<div class="card brand" tabindex="0"><div class="slot" data-logo="cm"></div><div class="over"><b>Celebrate Men</b><span>Content &amp; Social Media</span></div></div>
+</div></div></section>
+
+<section id="approach"><div class="wrap">
+<div class="head rv"><h2>How I handle customers</h2><p class="lead">Four habits behind every conversation, from the first message to the last.</p></div>
+<div class="grid steps rv">
+<div class="card step"><h3>Listen</h3><p>Understand what the customer actually needs.</p></div>
+<div class="card step"><h3>Respond</h3><p>Communicate clearly, professionally, and respectfully.</p></div>
+<div class="card step"><h3>Resolve</h3><p>Focus on solving the issue rather than simply replying.</p></div>
+<div class="card step"><h3>Follow Through</h3><p>Make sure the customer does not feel forgotten after the first interaction.</p></div>
+</div></div></section>
+
+<section id="social"><div class="wrap">
+<div class="head rv"><h2>Social media &amp; community management</h2></div>
+<div class="grid soc rv" id="socgrid"></div></div></section>
+
+<section id="reporting" style="background:var(--soft)"><div class="wrap rep rv">
+<div><h2>Reporting that teams can act on</h2><p class="lead">I track performance, spot patterns, and explain the findings in plain language.</p>
+<ul><li>Weekly reporting</li><li>Monthly reporting</li><li>Engagement monitoring</li><li>Audience insights</li><li>Content performance</li><li>Excel-based reporting</li><li>Identifying content trends</li><li>Communicating key findings to teams</li></ul></div>
+<div class="card dash" id="dash">
+<div class="dash-top"><b>Monthly performance overview</b><span class="tag">Sample layout, not real data</span></div>
+<div class="kpis"><div class="kpi"><small>Engagement rate</small><b>0.0%</b></div><div class="kpi"><small>Response time</small><b>0 min</b></div><div class="kpi"><small>Top format</small><b>Format</b></div></div>
+<svg viewBox="0 0 400 170" role="img" aria-label="Illustrative chart with placeholder bars and a trend line">
+<g class="bars"><rect x="20" y="100" width="34" height="60" rx="6"/><rect x="76" y="80" width="34" height="80" rx="6"/><rect x="132" y="90" width="34" height="70" rx="6"/><rect class="hi" x="188" y="50" width="34" height="110" rx="6"/><rect x="244" y="70" width="34" height="90" rx="6"/><rect x="300" y="60" width="34" height="100" rx="6"/><rect x="356" y="40" width="34" height="120" rx="6"/></g>
+<path class="line" d="M37 90 L93 66 L149 78 L205 32 L261 56 L317 44 L373 22"/></svg>
+<p class="note">Illustrative mock-up of the kind of report I prepare. Replace with your own screenshot.</p></div>
+</div></section>
+
+<section id="work"><div class="wrap">
+<div class="head rv"><h2>Selected work</h2></div>
+<div class="grid work rv" id="workgrid"></div></div></section>
+
+<section id="tools" style="background:var(--soft)"><div class="wrap">
+<div class="head rv"><h2>Tools I use</h2></div>
+<div class="grid tools rv" id="toolgrid"></div></div></section>
+
+<section id="testimonials"><div class="wrap">
+<div class="head rv"><h2>What colleagues say</h2><p class="lead">Placeholder testimonials. Replace with real quotes once you have them.</p></div>
+<div class="grid tes rv">
+<figure class="card" style="margin:0"><blockquote>"Testimonial text goes here. Ask a manager or teammate to describe how you handled customers or grew a community."</blockquote><figcaption class="who"><span class="av"></span><span><b>Name Surname</b><small>Role, Company</small></span></figcaption></figure>
+<figure class="card" style="margin:0"><blockquote>"Testimonial text goes here. A specific result or moment makes the strongest quote."</blockquote><figcaption class="who"><span class="av"></span><span><b>Name Surname</b><small>Role, Company</small></span></figcaption></figure>
+<figure class="card" style="margin:0"><blockquote>"Testimonial text goes here. Keep it to two or three sentences."</blockquote><figcaption class="who"><span class="av"></span><span><b>Name Surname</b><small>Role, Company</small></span></figcaption></figure>
+</div></div></section>
+
+<section id="contact" style="padding-top:0"><div class="wrap"><div class="contact rv">
+<div><h2>Let's Talk</h2><p class="lead">Whether you need someone to support your customers, manage your online community, or help keep your brand communication consistent, I'd be happy to connect.</p>
+<a class="btn" href="mailto:adeboyedaniel002@gmail.com?subject=Hello%20Daniel">Send Me a Message</a></div>
+<div class="cl"><div><small>Email</small><a href="mailto:adeboyedaniel002@gmail.com">adeboyedaniel002@gmail.com</a></div><div><small>Phone</small><a href="tel:+2347043922231">+234 704 392 2231</a></div><div><small>Location</small><span style="font-size:1.1rem;font-weight:500">Lagos, Nigeria</span></div></div>
+</div></div></section>
+
+<footer><div class="wrap"><div><b>Adeboye Daniel Oluwaseun</b>Customer Service &amp; Social Media Management</div><div>© 2026 Adeboye Daniel Oluwaseun. All rights reserved.</div></div></footer>
+
+<script>
+const I={
+chat:'<path d="M21 12a8 8 0 0 1-11.5 7.2L4 20l1-4.5A8 8 0 1 1 21 12z"/>',
+mail:'<rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/>',
+users:'<circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6M16 4.5a3.5 3.5 0 0 1 0 7M18 14c2.2.6 3.5 2.6 3.5 6"/>',
+share:'<circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="18" cy="18" r="2.5"/><path d="m8.2 10.8 7.6-3.6M8.2 13.2l7.6 3.6"/>',
+pen:'<path d="M4 20l1-4L16.5 4.5a2 2 0 0 1 3 3L8 19z"/>',
+mega:'<path d="M3 11v3h3l7 4V7L6 11zM17 9a4 4 0 0 1 0 6"/>',
+shield:'<path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="m9 12 2 2 4-4"/>',
+chart:'<path d="M4 20V4M4 20h16M8 16v-5M13 16V8M18 16v-3"/>',
+grid:'<rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M3 15h18M9 3v18M15 3v18"/>',
+doc:'<path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4M9 12h6M9 16h6"/>',
+laptop:'<rect x="4" y="5" width="16" height="11" rx="2"/><path d="M2 20h20"/>',
+tag:'<path d="M3 12V3h9l9 9-9 9z"/><circle cx="8" cy="8" r="1.5"/>',
+cal:'<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/>',
+ear:'<path d="M6 9a6 6 0 0 1 12 0c0 3-3 4-3 7a3 3 0 0 1-6 0"/>',
+eye:'<path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/>',
+rpt:'<path d="M5 3h14v18H5z"/><path d="M9 8h6M9 12h6M9 16h3"/>'};
+const lg=k=>({echo:'<span class="lg"><svg viewBox="0 0 24 24"><path d="M5 9a9 9 0 0 0 0 6M9 6.5a13 13 0 0 0 0 11M13 4a17 17 0 0 0 0 16"/></svg>Echo Africa</span>',oraimo:'<span class="lg lg-oraimo">orai<b>mo</b></span>',cm:'<span class="lg"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 13l3 3 5-7"/></svg>Celebrate Men</span>'})[k];
+document.querySelectorAll('[data-logo]').forEach(e=>e.innerHTML=lg(e.dataset.logo));
+const ic=k=>`<div class="ico"><svg viewBox="0 0 24 24">${I[k]}</svg></div>`;
+const sk=[["Customer Service","chat"],["Customer Enquiries","mail"],["Community Management","users"],["Social Media Management","share"],["Social Media Content","pen"],["Customer Communication","mega"],["Complaint Resolution","shield"],["Reporting & Analytics","chart"],["Microsoft Excel","grid"],["Microsoft Office","doc"],["Remote Collaboration","laptop"],["Brand Communication","tag"]];
+skillgrid.innerHTML=sk.map(([t,k])=>`<div class="card skill">${ic(k)}<h3>${t}</h3></div>`).join('');
+const so=[["Content Planning","cal","Plan the month ahead so every post has a purpose."],["Community Engagement","users","Reply, react, and keep conversations moving."],["Audience Communication","chat","Speak to people the way they speak, without losing clarity."],["Brand Voice","mega","Keep tone steady across every post and reply."],["Performance Monitoring","eye","Watch what the audience responds to, week by week."],["Monthly Reporting","rpt","Turn the numbers into a short, useful summary."]];
+socgrid.innerHTML=so.map(([t,k,d])=>`<div class="card">${ic(k)}<h3>${t}</h3><p>${d}</p></div>`).join('');
+const pr=[["Echo Africa","Social Media & Content","Social Media / Content Creator","Managing the agency's brand presence and creating content around campaigns and activities.",["Content creation","Community engagement","Audience monitoring"]],["oraimo","Community & Social Media","Social Media / Community Support","Supporting conversations with a Gen Z audience while keeping the brand voice natural.",["Audience replies","Campaign conversations","Tone and voice"]],["Celebrate Men","Content & Audience Engagement","Content & Social Media","Developing educational, relatable content and tracking how it performs.",["Content planning","Community engagement","Performance monitoring"]]];
+const K={'Echo Africa':'echo','oraimo':'oraimo','Celebrate Men':'cm'};
+workgrid.innerHTML=pr.map(([n,t,r,d,l])=>`<article class="card proj"><div class="shot art">${lg(K[n])}<i></i><i></i><i></i></div><div class="meta"><div><h3>${n}</h3><div class="rl">${t}</div></div></div><p>${d}</p><div><small style="color:var(--mute)">Role: ${r}</small><ul style="margin-top:8px">${l.map(x=>`<li>${x}</li>`).join('')}</ul></div><div class="res"><b>Results / impact</b><span>Add a result, e.g. growth, response time, or reach.</span></div><a class="btn s" href="#contact">View Case Study</a></article>`).join('');
+const tl=[["Microsoft Excel","X","#1d6f42"],["Microsoft Word","W","#2b579a"],["Microsoft PowerPoint","P","#c43e1c"],["Canva","C","#7d2ae8"],["Meta Business Suite","M","#0866ff"],["Social Media Platforms","@","#1c1e21"],["Google Workspace","G","#d9453a"]];
+toolgrid.innerHTML=tl.map(([n,l,c])=>`<div class="card tool"><i style="background:${c}">${l}</i>${n}</div>`).join('');
+const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}}),{threshold:.12});
+document.querySelectorAll('.rv,#dash').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
